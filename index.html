@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: all ease-in 1s;
+            transform: scale(1);
+        }
+
+        .top {
+            position: absolute;
+            top: 0;
+            height: 50px;
+            width: 100%;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+        }
+
+        .box {
+            height: 4px;
+            width: 4px;
+            background-color: red;
+            /* float: left; */
+            position: absolute;
+            transition: all ease-in 1s;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+        }
+
+        .heart-particle {
+            height: 2px;
+            width: 2px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <!-- <div class="box"></div> -->
+    </div>
+    <div class="bottom"></div>
+    <div class="center">
+        <!-- <div class="heart-particle" style="top:1px;bottom:1px"></div> -->
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
